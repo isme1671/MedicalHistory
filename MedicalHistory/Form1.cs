@@ -16,5 +16,17 @@ namespace MedicalHistory
         {
             InitializeComponent();
         }
+
+        private void accederbtn_Click(object sender, EventArgs e)
+        {
+            inicio aform = new inicio();
+            aform.Show();
+            this.Hide();
+        }
+
+        private void salirbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
