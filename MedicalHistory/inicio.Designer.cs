@@ -103,6 +103,7 @@ namespace MedicalHistory
             this.salirbtn.Size = new System.Drawing.Size(32, 33);
             this.salirbtn.TabIndex = 6;
             this.salirbtn.Text = "x";
+            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
             // 
             // Dashboardbt
             // 

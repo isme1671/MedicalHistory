@@ -32,5 +32,11 @@ namespace MedicalHistory
         {
             AbrirForm(new dashboard());
         }
+
+        private void salirbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }
