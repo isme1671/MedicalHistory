@@ -38,5 +38,10 @@ namespace MedicalHistory
             this.Close();
 
         }
+
+        private void pacienbt_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new pacientes());
+        }
     }
 }
