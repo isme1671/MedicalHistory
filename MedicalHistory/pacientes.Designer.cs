@@ -31,18 +31,14 @@ namespace MedicalHistory
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pacientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tbbuscar = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.dgvpacientes = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.clinicaDataSet = new MedicalHistory.clinicaDataSet();
-            this.clinicaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pacientesTableAdapter = new MedicalHistory.clinicaDataSetTableAdapters.pacientesTableAdapter();
             this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.idpacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +49,10 @@ namespace MedicalHistory
             this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idhistorialmedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idpacientetb = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pacientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clinicaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clinicaDataSet = new MedicalHistory.clinicaDataSet();
+            this.pacientesTableAdapter = new MedicalHistory.clinicaDataSetTableAdapters.pacientesTableAdapter();
             this.tbnombrep = new Guna.UI2.WinForms.Guna2TextBox();
             this.apellidotb = new Guna.UI2.WinForms.Guna2TextBox();
             this.cedulatb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -69,9 +68,9 @@ namespace MedicalHistory
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpacientes)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,18 +96,6 @@ namespace MedicalHistory
             this.guna2GradientPanel1.Size = new System.Drawing.Size(774, 55);
             this.guna2GradientPanel1.TabIndex = 1;
             // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(714, 7);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(48, 48);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 16;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
             // tbbuscar
             // 
             this.tbbuscar.BackColor = System.Drawing.Color.Transparent;
@@ -126,6 +113,7 @@ namespace MedicalHistory
             this.tbbuscar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbbuscar.IconLeft = ((System.Drawing.Image)(resources.GetObject("tbbuscar.IconLeft")));
             this.tbbuscar.Location = new System.Drawing.Point(497, 18);
+            this.tbbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbbuscar.Name = "tbbuscar";
             this.tbbuscar.PlaceholderForeColor = System.Drawing.Color.Black;
             this.tbbuscar.PlaceholderText = "Buscar";
@@ -134,20 +122,32 @@ namespace MedicalHistory
             this.tbbuscar.TabIndex = 17;
             this.tbbuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(714, 7);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 16;
+            this.guna2CirclePictureBox1.TabStop = false;
+            // 
             // dgvpacientes
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvpacientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvpacientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvpacientes.AutoGenerateColumns = false;
             this.dgvpacientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvpacientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvpacientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvpacientes.ColumnHeadersHeight = 39;
             this.dgvpacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvpacientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -162,14 +162,14 @@ namespace MedicalHistory
             this.correoDataGridViewTextBoxColumn,
             this.idhistorialmedicoDataGridViewTextBoxColumn});
             this.dgvpacientes.DataSource = this.pacientesBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvpacientes.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvpacientes.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvpacientes.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvpacientes.Location = new System.Drawing.Point(29, 77);
             this.dgvpacientes.Name = "dgvpacientes";
@@ -199,25 +199,6 @@ namespace MedicalHistory
             this.dgvpacientes.ThemeStyle.RowsStyle.Height = 35;
             this.dgvpacientes.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvpacientes.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // clinicaDataSet
-            // 
-            this.clinicaDataSet.DataSetName = "clinicaDataSet";
-            this.clinicaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // clinicaDataSetBindingSource
-            // 
-            this.clinicaDataSetBindingSource.DataSource = this.clinicaDataSet;
-            this.clinicaDataSetBindingSource.Position = 0;
-            // 
-            // pacientesBindingSource
-            // 
-            this.pacientesBindingSource.DataMember = "pacientes";
-            this.pacientesBindingSource.DataSource = this.clinicaDataSetBindingSource;
-            // 
-            // pacientesTableAdapter
-            // 
-            this.pacientesTableAdapter.ClearBeforeFill = true;
             // 
             // Column1
             // 
@@ -290,29 +271,24 @@ namespace MedicalHistory
             this.idhistorialmedicoDataGridViewTextBoxColumn.Name = "idhistorialmedicoDataGridViewTextBoxColumn";
             this.idhistorialmedicoDataGridViewTextBoxColumn.Width = 118;
             // 
-            // idpacientetb
+            // pacientesBindingSource
             // 
-            this.idpacientetb.BorderColor = System.Drawing.Color.DarkCyan;
-            this.idpacientetb.BorderRadius = 5;
-            this.idpacientetb.BorderThickness = 2;
-            this.idpacientetb.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.idpacientetb.DefaultText = "";
-            this.idpacientetb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.idpacientetb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.idpacientetb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.idpacientetb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.idpacientetb.FillColor = System.Drawing.Color.AliceBlue;
-            this.idpacientetb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.idpacientetb.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idpacientetb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.idpacientetb.Location = new System.Drawing.Point(31, 449);
-            this.idpacientetb.Name = "idpacientetb";
-            this.idpacientetb.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.idpacientetb.PlaceholderText = "ID Paciente";
-            this.idpacientetb.SelectedText = "";
-            this.idpacientetb.Size = new System.Drawing.Size(113, 31);
-            this.idpacientetb.TabIndex = 3;
-            this.idpacientetb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pacientesBindingSource.DataMember = "pacientes";
+            this.pacientesBindingSource.DataSource = this.clinicaDataSetBindingSource;
+            // 
+            // clinicaDataSetBindingSource
+            // 
+            this.clinicaDataSetBindingSource.DataSource = this.clinicaDataSet;
+            this.clinicaDataSetBindingSource.Position = 0;
+            // 
+            // clinicaDataSet
+            // 
+            this.clinicaDataSet.DataSetName = "clinicaDataSet";
+            this.clinicaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pacientesTableAdapter
+            // 
+            this.pacientesTableAdapter.ClearBeforeFill = true;
             // 
             // tbnombrep
             // 
@@ -329,7 +305,7 @@ namespace MedicalHistory
             this.tbnombrep.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbnombrep.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbnombrep.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbnombrep.Location = new System.Drawing.Point(31, 495);
+            this.tbnombrep.Location = new System.Drawing.Point(31, 449);
             this.tbnombrep.Name = "tbnombrep";
             this.tbnombrep.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.tbnombrep.PlaceholderText = "Nombre";
@@ -353,7 +329,7 @@ namespace MedicalHistory
             this.apellidotb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.apellidotb.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.apellidotb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.apellidotb.Location = new System.Drawing.Point(31, 539);
+            this.apellidotb.Location = new System.Drawing.Point(31, 495);
             this.apellidotb.Name = "apellidotb";
             this.apellidotb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.apellidotb.PlaceholderText = "Apellido";
@@ -377,7 +353,7 @@ namespace MedicalHistory
             this.cedulatb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cedulatb.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cedulatb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cedulatb.Location = new System.Drawing.Point(180, 449);
+            this.cedulatb.Location = new System.Drawing.Point(31, 539);
             this.cedulatb.Name = "cedulatb";
             this.cedulatb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.cedulatb.PlaceholderText = "Cédula";
@@ -401,7 +377,7 @@ namespace MedicalHistory
             this.edadtb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.edadtb.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.edadtb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.edadtb.Location = new System.Drawing.Point(180, 495);
+            this.edadtb.Location = new System.Drawing.Point(180, 449);
             this.edadtb.Name = "edadtb";
             this.edadtb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.edadtb.PlaceholderText = "Edad";
@@ -425,7 +401,7 @@ namespace MedicalHistory
             this.direcciontb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.direcciontb.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direcciontb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.direcciontb.Location = new System.Drawing.Point(180, 539);
+            this.direcciontb.Location = new System.Drawing.Point(180, 495);
             this.direcciontb.Name = "direcciontb";
             this.direcciontb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.direcciontb.PlaceholderText = "Dirección";
@@ -449,7 +425,7 @@ namespace MedicalHistory
             this.telefonotb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.telefonotb.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.telefonotb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.telefonotb.Location = new System.Drawing.Point(329, 449);
+            this.telefonotb.Location = new System.Drawing.Point(180, 539);
             this.telefonotb.Name = "telefonotb";
             this.telefonotb.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.telefonotb.PlaceholderText = "Teléfono";
@@ -497,7 +473,7 @@ namespace MedicalHistory
             this.tbhistorial.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tbhistorial.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbhistorial.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbhistorial.Location = new System.Drawing.Point(329, 495);
+            this.tbhistorial.Location = new System.Drawing.Point(329, 449);
             this.tbhistorial.Name = "tbhistorial";
             this.tbhistorial.PlaceholderForeColor = System.Drawing.Color.Gray;
             this.tbhistorial.PlaceholderText = "Historial Médico";
@@ -526,6 +502,7 @@ namespace MedicalHistory
             this.btagregar.Size = new System.Drawing.Size(119, 31);
             this.btagregar.TabIndex = 12;
             this.btagregar.Text = "Agregar";
+            this.btagregar.Click += new System.EventHandler(this.btagregar_Click);
             // 
             // guna2Button1
             // 
@@ -608,7 +585,6 @@ namespace MedicalHistory
             this.Controls.Add(this.cedulatb);
             this.Controls.Add(this.apellidotb);
             this.Controls.Add(this.tbnombrep);
-            this.Controls.Add(this.idpacientetb);
             this.Controls.Add(this.dgvpacientes);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -619,9 +595,9 @@ namespace MedicalHistory
             this.guna2GradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvpacientes)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pacientesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clinicaDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -647,7 +623,6 @@ namespace MedicalHistory
         private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn correoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idhistorialmedicoDataGridViewTextBoxColumn;
-        private Guna.UI2.WinForms.Guna2TextBox idpacientetb;
         private Guna.UI2.WinForms.Guna2TextBox tbnombrep;
         private Guna.UI2.WinForms.Guna2TextBox apellidotb;
         private Guna.UI2.WinForms.Guna2TextBox cedulatb;

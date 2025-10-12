@@ -57,6 +57,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>clinicaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Conexion.cs" />
     <Compile Include="corazon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
