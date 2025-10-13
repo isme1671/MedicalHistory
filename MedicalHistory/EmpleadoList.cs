@@ -27,5 +27,10 @@ namespace MedicalHistory
             Empleados em = new Empleados();
             em.Show();
         }
+
+        private void btneditar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

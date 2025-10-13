@@ -43,5 +43,10 @@ namespace MedicalHistory
         {
             AbrirForm(new pacientes());
         }
+
+        private void Dashboardbt_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

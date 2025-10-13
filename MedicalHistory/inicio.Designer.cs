@@ -31,11 +31,8 @@ namespace MedicalHistory
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.userlb = new System.Windows.Forms.Label();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.salirbtn = new Guna.UI2.WinForms.Guna2Button();
-            this.pdad = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.userlb = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -43,10 +40,13 @@ namespace MedicalHistory
             this.citasbtn = new Guna.UI2.WinForms.Guna2Button();
             this.pacienbt = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboardbt = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.salirbtn = new Guna.UI2.WinForms.Guna2Button();
+            this.pdad = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,47 +69,6 @@ namespace MedicalHistory
             this.guna2GradientPanel1.Size = new System.Drawing.Size(185, 623);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
-            // userlb
-            // 
-            this.userlb.AutoSize = true;
-            this.userlb.Location = new System.Drawing.Point(70, 579);
-            this.userlb.Name = "userlb";
-            this.userlb.Size = new System.Drawing.Size(41, 13);
-            this.userlb.TabIndex = 8;
-            this.userlb.Text = "usuario";
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.guna2GradientPanel2.Controls.Add(this.guna2CirclePictureBox1);
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(185, 88);
-            this.guna2GradientPanel2.TabIndex = 0;
-            // 
-            // salirbtn
-            // 
-            this.salirbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.salirbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.salirbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.salirbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.salirbtn.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salirbtn.ForeColor = System.Drawing.Color.White;
-            this.salirbtn.Location = new System.Drawing.Point(930, -1);
-            this.salirbtn.Name = "salirbtn";
-            this.salirbtn.Size = new System.Drawing.Size(32, 33);
-            this.salirbtn.TabIndex = 6;
-            this.salirbtn.Text = "x";
-            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
-            // 
-            // pdad
-            // 
-            this.pdad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pdad.Location = new System.Drawing.Point(185, 31);
-            this.pdad.Name = "pdad";
-            this.pdad.Size = new System.Drawing.Size(777, 592);
-            this.pdad.TabIndex = 7;
-            // 
             // guna2Button4
             // 
             this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -131,6 +90,15 @@ namespace MedicalHistory
             this.guna2Button4.Size = new System.Drawing.Size(185, 49);
             this.guna2Button4.TabIndex = 9;
             this.guna2Button4.Text = "Usuarios";
+            // 
+            // userlb
+            // 
+            this.userlb.AutoSize = true;
+            this.userlb.Location = new System.Drawing.Point(70, 579);
+            this.userlb.Name = "userlb";
+            this.userlb.Size = new System.Drawing.Size(41, 13);
+            this.userlb.TabIndex = 8;
+            this.userlb.Text = "usuario";
             // 
             // guna2CirclePictureBox2
             // 
@@ -278,6 +246,16 @@ namespace MedicalHistory
             this.Dashboardbt.Size = new System.Drawing.Size(185, 49);
             this.Dashboardbt.TabIndex = 1;
             this.Dashboardbt.Text = "Dashboard";
+            this.Dashboardbt.Click += new System.EventHandler(this.Dashboardbt_Click);
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2GradientPanel2.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(185, 88);
+            this.guna2GradientPanel2.TabIndex = 0;
             // 
             // guna2CirclePictureBox1
             // 
@@ -290,6 +268,29 @@ namespace MedicalHistory
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 1;
             this.guna2CirclePictureBox1.TabStop = false;
+            // 
+            // salirbtn
+            // 
+            this.salirbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.salirbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.salirbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.salirbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.salirbtn.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirbtn.ForeColor = System.Drawing.Color.White;
+            this.salirbtn.Location = new System.Drawing.Point(930, -1);
+            this.salirbtn.Name = "salirbtn";
+            this.salirbtn.Size = new System.Drawing.Size(32, 33);
+            this.salirbtn.TabIndex = 6;
+            this.salirbtn.Text = "x";
+            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
+            // 
+            // pdad
+            // 
+            this.pdad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pdad.Location = new System.Drawing.Point(185, 31);
+            this.pdad.Name = "pdad";
+            this.pdad.Size = new System.Drawing.Size(777, 592);
+            this.pdad.TabIndex = 7;
             // 
             // inicio
             // 
@@ -307,8 +308,8 @@ namespace MedicalHistory
             this.Load += new System.EventHandler(this.inicio_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
