@@ -75,6 +75,18 @@
     <Compile Include="dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmpleadoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadoList.Designer.cs">
+      <DependentUpon>EmpleadoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados.Designer.cs">
+      <DependentUpon>Empleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,7 @@
     <Compile Include="inicio.Designer.cs">
       <DependentUpon>inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modelo\EmpleadosSql.cs" />
     <Compile Include="pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +117,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadoList.resx">
+      <DependentUpon>EmpleadoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados.resx">
+      <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -179,5 +198,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
