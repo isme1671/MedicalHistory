@@ -31,9 +31,9 @@ namespace MedicalHistory
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.userlb = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.salirbtn = new Guna.UI2.WinForms.Guna2Button();
-            this.userlb = new System.Windows.Forms.Label();
             this.pdad = new System.Windows.Forms.Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -69,6 +69,15 @@ namespace MedicalHistory
             this.guna2GradientPanel1.Size = new System.Drawing.Size(185, 623);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
+            // userlb
+            // 
+            this.userlb.AutoSize = true;
+            this.userlb.Location = new System.Drawing.Point(70, 579);
+            this.userlb.Name = "userlb";
+            this.userlb.Size = new System.Drawing.Size(41, 13);
+            this.userlb.TabIndex = 8;
+            this.userlb.Text = "usuario";
+            // 
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -92,15 +101,6 @@ namespace MedicalHistory
             this.salirbtn.TabIndex = 6;
             this.salirbtn.Text = "x";
             this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
-            // 
-            // userlb
-            // 
-            this.userlb.AutoSize = true;
-            this.userlb.Location = new System.Drawing.Point(70, 579);
-            this.userlb.Name = "userlb";
-            this.userlb.Size = new System.Drawing.Size(41, 13);
-            this.userlb.TabIndex = 8;
-            this.userlb.Text = "usuario";
             // 
             // pdad
             // 
@@ -209,7 +209,7 @@ namespace MedicalHistory
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(185, 49);
             this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Gestión de Médicos";
+            this.guna2Button1.Text = "Empleados";
             this.guna2Button1.TextOffset = new System.Drawing.Point(13, 0);
             // 
             // citasbtn

@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="citas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="citas.Designer.cs">
+      <DependentUpon>citas.cs</DependentUpon>
+    </Compile>
     <Compile Include="clinicaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="citas.resx">
+      <DependentUpon>citas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="corazon.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>corazon.Designer.cs</LastGenOutput>
