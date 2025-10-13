@@ -31,44 +31,54 @@ namespace MedicalHistory
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+<<<<<<< HEAD
             this.userlb = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.salirbtn = new Guna.UI2.WinForms.Guna2Button();
             this.pdad = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnpacientes = new Guna.UI2.WinForms.Guna2Button();
+=======
+            this.btnusuarios = new Guna.UI2.WinForms.Guna2Button();
+            this.userlb = new System.Windows.Forms.Label();
+>>>>>>> Eliminar empleados y autorizacion por roles
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnconfi = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnmedicos = new Guna.UI2.WinForms.Guna2Button();
             this.citasbtn = new Guna.UI2.WinForms.Guna2Button();
-            this.pacienbt = new Guna.UI2.WinForms.Guna2Button();
+            this.btnpacientes = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboardbt = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.salirbtn = new Guna.UI2.WinForms.Guna2Button();
+            this.pdad = new System.Windows.Forms.Panel();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button4);
+            this.guna2GradientPanel1.Controls.Add(this.btnusuarios);
             this.guna2GradientPanel1.Controls.Add(this.userlb);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox2);
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button3);
+            this.guna2GradientPanel1.Controls.Add(this.btnconfi);
             this.guna2GradientPanel1.Controls.Add(this.guna2Button2);
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button1);
+            this.guna2GradientPanel1.Controls.Add(this.btnmedicos);
             this.guna2GradientPanel1.Controls.Add(this.citasbtn);
-            this.guna2GradientPanel1.Controls.Add(this.pacienbt);
+            this.guna2GradientPanel1.Controls.Add(this.btnpacientes);
             this.guna2GradientPanel1.Controls.Add(this.Dashboardbt);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel2);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(185, 623);
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(278, 958);
             this.guna2GradientPanel1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // userlb
             // 
             this.userlb.AutoSize = true;
@@ -88,20 +98,32 @@ namespace MedicalHistory
             this.guna2GradientPanel2.TabIndex = 0;
             // 
             // salirbtn
+=======
+            // btnusuarios
+>>>>>>> Eliminar empleados y autorizacion por roles
             // 
-            this.salirbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.salirbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.salirbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.salirbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.salirbtn.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salirbtn.ForeColor = System.Drawing.Color.White;
-            this.salirbtn.Location = new System.Drawing.Point(930, -1);
-            this.salirbtn.Name = "salirbtn";
-            this.salirbtn.Size = new System.Drawing.Size(32, 33);
-            this.salirbtn.TabIndex = 6;
-            this.salirbtn.Text = "x";
-            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
+            this.btnusuarios.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnusuarios.BorderThickness = 2;
+            this.btnusuarios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnusuarios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnusuarios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnusuarios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnusuarios.FillColor = System.Drawing.Color.Lavender;
+            this.btnusuarios.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusuarios.ForeColor = System.Drawing.Color.Black;
+            this.btnusuarios.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnusuarios.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnusuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnusuarios.Image")));
+            this.btnusuarios.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnusuarios.ImageSize = new System.Drawing.Size(33, 33);
+            this.btnusuarios.Location = new System.Drawing.Point(0, 602);
+            this.btnusuarios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnusuarios.Name = "btnusuarios";
+            this.btnusuarios.Size = new System.Drawing.Size(278, 75);
+            this.btnusuarios.TabIndex = 9;
+            this.btnusuarios.Text = "Usuarios";
             // 
+<<<<<<< HEAD
             // pdad
             // 
             this.pdad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -131,40 +153,53 @@ namespace MedicalHistory
             this.guna2Button4.Size = new System.Drawing.Size(185, 49);
             this.guna2Button4.TabIndex = 9;
             this.guna2Button4.Text = "Usuarios";
+=======
+            // userlb
+            // 
+            this.userlb.AutoSize = true;
+            this.userlb.Location = new System.Drawing.Point(105, 891);
+            this.userlb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.userlb.Name = "userlb";
+            this.userlb.Size = new System.Drawing.Size(61, 20);
+            this.userlb.TabIndex = 8;
+            this.userlb.Text = "usuario";
+>>>>>>> Eliminar empleados y autorizacion por roles
             // 
             // guna2CirclePictureBox2
             // 
             this.guna2CirclePictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox2.Image")));
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(57, 512);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(86, 788);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(96, 98);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox2.TabIndex = 7;
             this.guna2CirclePictureBox2.TabStop = false;
             // 
-            // guna2Button3
+            // btnconfi
             // 
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button3.BorderThickness = 2;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Lavender;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 340);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(185, 49);
-            this.guna2Button3.TabIndex = 6;
-            this.guna2Button3.Text = "Configuración";
+            this.btnconfi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnconfi.BorderThickness = 2;
+            this.btnconfi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnconfi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnconfi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnconfi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnconfi.FillColor = System.Drawing.Color.Lavender;
+            this.btnconfi.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconfi.ForeColor = System.Drawing.Color.Black;
+            this.btnconfi.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnconfi.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnconfi.Image = ((System.Drawing.Image)(resources.GetObject("btnconfi.Image")));
+            this.btnconfi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnconfi.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnconfi.Location = new System.Drawing.Point(0, 523);
+            this.btnconfi.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnconfi.Name = "btnconfi";
+            this.btnconfi.Size = new System.Drawing.Size(278, 75);
+            this.btnconfi.TabIndex = 6;
+            this.btnconfi.Text = "Configuración";
             // 
             // guna2Button2
             // 
@@ -182,15 +217,17 @@ namespace MedicalHistory
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 290);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 446);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(185, 49);
+            this.guna2Button2.Size = new System.Drawing.Size(278, 75);
             this.guna2Button2.TabIndex = 5;
             this.guna2Button2.Text = "Historial Médico";
             this.guna2Button2.TextOffset = new System.Drawing.Point(5, 0);
             // 
-            // guna2Button1
+            // btnmedicos
             // 
+<<<<<<< HEAD
             this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.guna2Button1.BorderThickness = 2;
             this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -211,6 +248,30 @@ namespace MedicalHistory
             this.guna2Button1.TabIndex = 4;
             this.guna2Button1.Text = "Empleados";
             this.guna2Button1.TextOffset = new System.Drawing.Point(13, 0);
+=======
+            this.btnmedicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnmedicos.BorderThickness = 2;
+            this.btnmedicos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnmedicos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnmedicos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnmedicos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnmedicos.FillColor = System.Drawing.Color.Lavender;
+            this.btnmedicos.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmedicos.ForeColor = System.Drawing.Color.Black;
+            this.btnmedicos.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnmedicos.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnmedicos.Image = ((System.Drawing.Image)(resources.GetObject("btnmedicos.Image")));
+            this.btnmedicos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnmedicos.ImageSize = new System.Drawing.Size(25, 27);
+            this.btnmedicos.Location = new System.Drawing.Point(0, 369);
+            this.btnmedicos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnmedicos.Name = "btnmedicos";
+            this.btnmedicos.Size = new System.Drawing.Size(278, 75);
+            this.btnmedicos.TabIndex = 4;
+            this.btnmedicos.Text = "Gestión de Médicos";
+            this.btnmedicos.TextOffset = new System.Drawing.Point(13, 0);
+            this.btnmedicos.Click += new System.EventHandler(this.btnmedicos_Click);
+>>>>>>> Eliminar empleados y autorizacion por roles
             // 
             // citasbtn
             // 
@@ -228,34 +289,36 @@ namespace MedicalHistory
             this.citasbtn.Image = ((System.Drawing.Image)(resources.GetObject("citasbtn.Image")));
             this.citasbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.citasbtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.citasbtn.Location = new System.Drawing.Point(0, 190);
+            this.citasbtn.Location = new System.Drawing.Point(0, 292);
+            this.citasbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.citasbtn.Name = "citasbtn";
-            this.citasbtn.Size = new System.Drawing.Size(185, 49);
+            this.citasbtn.Size = new System.Drawing.Size(278, 75);
             this.citasbtn.TabIndex = 3;
             this.citasbtn.Text = "Gestión de Citas";
             // 
-            // pacienbt
+            // btnpacientes
             // 
-            this.pacienbt.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.pacienbt.BorderThickness = 2;
-            this.pacienbt.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.pacienbt.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.pacienbt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.pacienbt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.pacienbt.FillColor = System.Drawing.Color.Lavender;
-            this.pacienbt.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pacienbt.ForeColor = System.Drawing.Color.Black;
-            this.pacienbt.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.pacienbt.HoverState.FillColor = System.Drawing.Color.GhostWhite;
-            this.pacienbt.Image = ((System.Drawing.Image)(resources.GetObject("pacienbt.Image")));
-            this.pacienbt.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.pacienbt.ImageSize = new System.Drawing.Size(30, 30);
-            this.pacienbt.Location = new System.Drawing.Point(0, 140);
-            this.pacienbt.Name = "pacienbt";
-            this.pacienbt.Size = new System.Drawing.Size(185, 49);
-            this.pacienbt.TabIndex = 2;
-            this.pacienbt.Text = "Pacientes";
-            this.pacienbt.Click += new System.EventHandler(this.pacienbt_Click);
+            this.btnpacientes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnpacientes.BorderThickness = 2;
+            this.btnpacientes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnpacientes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnpacientes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnpacientes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnpacientes.FillColor = System.Drawing.Color.Lavender;
+            this.btnpacientes.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpacientes.ForeColor = System.Drawing.Color.Black;
+            this.btnpacientes.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnpacientes.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnpacientes.Image = ((System.Drawing.Image)(resources.GetObject("btnpacientes.Image")));
+            this.btnpacientes.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnpacientes.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnpacientes.Location = new System.Drawing.Point(0, 215);
+            this.btnpacientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnpacientes.Name = "btnpacientes";
+            this.btnpacientes.Size = new System.Drawing.Size(278, 75);
+            this.btnpacientes.TabIndex = 2;
+            this.btnpacientes.Text = "Pacientes";
+            this.btnpacientes.Click += new System.EventHandler(this.pacienbt_Click);
             // 
             // Dashboardbt
             // 
@@ -273,42 +336,80 @@ namespace MedicalHistory
             this.Dashboardbt.Image = ((System.Drawing.Image)(resources.GetObject("Dashboardbt.Image")));
             this.Dashboardbt.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Dashboardbt.ImageSize = new System.Drawing.Size(30, 30);
-            this.Dashboardbt.Location = new System.Drawing.Point(0, 90);
+            this.Dashboardbt.Location = new System.Drawing.Point(0, 138);
+            this.Dashboardbt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Dashboardbt.Name = "Dashboardbt";
-            this.Dashboardbt.Size = new System.Drawing.Size(185, 49);
+            this.Dashboardbt.Size = new System.Drawing.Size(278, 75);
             this.Dashboardbt.TabIndex = 1;
             this.Dashboardbt.Text = "Dashboard";
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.guna2GradientPanel2.Controls.Add(this.guna2CirclePictureBox1);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(278, 135);
+            this.guna2GradientPanel2.TabIndex = 0;
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(57, 12);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(86, 18);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(96, 98);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 1;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
+            // salirbtn
+            // 
+            this.salirbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.salirbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.salirbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.salirbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.salirbtn.Font = new System.Drawing.Font("Lucida Sans Unicode", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirbtn.ForeColor = System.Drawing.Color.White;
+            this.salirbtn.Location = new System.Drawing.Point(1395, -2);
+            this.salirbtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.salirbtn.Name = "salirbtn";
+            this.salirbtn.Size = new System.Drawing.Size(48, 51);
+            this.salirbtn.TabIndex = 6;
+            this.salirbtn.Text = "x";
+            this.salirbtn.Click += new System.EventHandler(this.salirbtn_Click);
+            // 
+            // pdad
+            // 
+            this.pdad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pdad.Location = new System.Drawing.Point(278, 48);
+            this.pdad.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pdad.Name = "pdad";
+            this.pdad.Size = new System.Drawing.Size(1166, 911);
+            this.pdad.TabIndex = 7;
+            // 
             // inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(960, 623);
+            this.ClientSize = new System.Drawing.Size(1440, 958);
             this.Controls.Add(this.pdad);
             this.Controls.Add(this.salirbtn);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "inicio";
             this.Load += new System.EventHandler(this.inicio_Load);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            this.guna2GradientPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 

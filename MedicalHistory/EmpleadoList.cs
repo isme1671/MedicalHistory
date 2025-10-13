@@ -27,5 +27,19 @@ namespace MedicalHistory
             Empleados em = new Empleados();
             em.Show();
         }
+
+        private void btneliminar_Click(object sender, EventArgs e)
+        {
+            EmpleadosSql em = new EmpleadosSql();
+            if (dgem.SelectedRows.Count == 1){
+               
+                int id = Convert.ToInt32(dgem.CurrentRow.Cells[0].Value);
+                 em.Eliminar(id);
+
+                em.Mostrar();
+                MessageBox.Show("Se elimino el empleado");
+ 
+            }
+        }
     }
 }

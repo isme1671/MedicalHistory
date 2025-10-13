@@ -37,7 +37,7 @@ namespace MedicalHistory.Modelo
         public DataTable Mostrar()
         {
             Conexion.Conectar();
-            string query = "select e.nombre, e.apellido, e.cedula, e.edad, e.correo, o.ocupacion from empleados as e join ocupacion as o \r\non e.id_ocupacion = o.id_ocupacion";
+            string query = "select e.id_empleado, e.nombre, e.apellido, e.cedula, e.edad, e.correo, o.ocupacion from empleados as e join ocupacion as o \r\non e.id_ocupacion = o.id_ocupacion";
             SqlDataAdapter data = new SqlDataAdapter(query, Conexion.Conectar());
             data.SelectCommand.CommandType = CommandType.Text;
             DataTable dt = new DataTable();
@@ -82,6 +82,18 @@ namespace MedicalHistory.Modelo
             {
                 mensaje = "error";
             } 
+            Conexion.Cerrar();
+        }
+
+        public void Eliminar(int id)
+        {
+            Conexion.Conectar();
+            string query = "delete from empleados where id_empleado="+id+"";
+            SqlCommand cm = new SqlCommand(query, Conexion.Conectar());
+            cm.CommandType = CommandType.Text;
+            
+            int r = cm.ExecuteNonQuery();
+            
             Conexion.Cerrar();
         }
     }

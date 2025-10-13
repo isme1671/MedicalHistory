@@ -41,7 +41,14 @@ namespace MedicalHistory
 
         private void pacienbt_Click(object sender, EventArgs e)
         {
-            AbrirForm(new pacientes());
+            pacientes pa = new pacientes();
+            pa.Show();
+        }
+
+        private void btnmedicos_Click(object sender, EventArgs e)
+        {
+            EmpleadoList em = new EmpleadoList();
+            em.Show();
         }
     }
 }
