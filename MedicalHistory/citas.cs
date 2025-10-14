@@ -21,5 +21,12 @@ namespace MedicalHistory
         {
 
         }
+
+        private void citas_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'clinicaDataSet.citas' table. You can move, or remove it, as needed.
+            this.citasTableAdapter.Fill(this.clinicaDataSet.citas);
+
+        }
     }
 }
