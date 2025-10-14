@@ -35,11 +35,11 @@ namespace MedicalHistory
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.salirbtn = new Guna.UI2.WinForms.Guna2Button();
             this.pdad = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnusuarios = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnconfi = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnmedicos = new Guna.UI2.WinForms.Guna2Button();
             this.citasbtn = new Guna.UI2.WinForms.Guna2Button();
             this.pacienbt = new Guna.UI2.WinForms.Guna2Button();
             this.Dashboardbt = new Guna.UI2.WinForms.Guna2Button();
@@ -53,12 +53,12 @@ namespace MedicalHistory
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button4);
+            this.guna2GradientPanel1.Controls.Add(this.btnusuarios);
             this.guna2GradientPanel1.Controls.Add(this.userlb);
             this.guna2GradientPanel1.Controls.Add(this.guna2CirclePictureBox2);
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button3);
+            this.guna2GradientPanel1.Controls.Add(this.btnconfi);
             this.guna2GradientPanel1.Controls.Add(this.guna2Button2);
-            this.guna2GradientPanel1.Controls.Add(this.guna2Button1);
+            this.guna2GradientPanel1.Controls.Add(this.btnmedicos);
             this.guna2GradientPanel1.Controls.Add(this.citasbtn);
             this.guna2GradientPanel1.Controls.Add(this.pacienbt);
             this.guna2GradientPanel1.Controls.Add(this.Dashboardbt);
@@ -111,27 +111,27 @@ namespace MedicalHistory
             this.pdad.TabIndex = 7;
             this.pdad.Paint += new System.Windows.Forms.PaintEventHandler(this.pdad_Paint);
             // 
-            // guna2Button4
+            // btnusuarios
             // 
-            this.guna2Button4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button4.BorderThickness = 2;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.Lavender;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(33, 33);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 391);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(185, 49);
-            this.guna2Button4.TabIndex = 9;
-            this.guna2Button4.Text = "Usuarios";
+            this.btnusuarios.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnusuarios.BorderThickness = 2;
+            this.btnusuarios.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnusuarios.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnusuarios.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnusuarios.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnusuarios.FillColor = System.Drawing.Color.Lavender;
+            this.btnusuarios.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusuarios.ForeColor = System.Drawing.Color.Black;
+            this.btnusuarios.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnusuarios.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnusuarios.Image = ((System.Drawing.Image)(resources.GetObject("btnusuarios.Image")));
+            this.btnusuarios.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnusuarios.ImageSize = new System.Drawing.Size(33, 33);
+            this.btnusuarios.Location = new System.Drawing.Point(0, 391);
+            this.btnusuarios.Name = "btnusuarios";
+            this.btnusuarios.Size = new System.Drawing.Size(185, 49);
+            this.btnusuarios.TabIndex = 9;
+            this.btnusuarios.Text = "Usuarios";
             // 
             // guna2CirclePictureBox2
             // 
@@ -145,27 +145,27 @@ namespace MedicalHistory
             this.guna2CirclePictureBox2.TabIndex = 7;
             this.guna2CirclePictureBox2.TabStop = false;
             // 
-            // guna2Button3
+            // btnconfi
             // 
-            this.guna2Button3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button3.BorderThickness = 2;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Lavender;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 340);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(185, 49);
-            this.guna2Button3.TabIndex = 6;
-            this.guna2Button3.Text = "Configuración";
+            this.btnconfi.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnconfi.BorderThickness = 2;
+            this.btnconfi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnconfi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnconfi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnconfi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnconfi.FillColor = System.Drawing.Color.Lavender;
+            this.btnconfi.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconfi.ForeColor = System.Drawing.Color.Black;
+            this.btnconfi.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnconfi.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnconfi.Image = ((System.Drawing.Image)(resources.GetObject("btnconfi.Image")));
+            this.btnconfi.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnconfi.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnconfi.Location = new System.Drawing.Point(0, 340);
+            this.btnconfi.Name = "btnconfi";
+            this.btnconfi.Size = new System.Drawing.Size(185, 49);
+            this.btnconfi.TabIndex = 6;
+            this.btnconfi.Text = "Configuración";
             // 
             // guna2Button2
             // 
@@ -191,29 +191,29 @@ namespace MedicalHistory
             this.guna2Button2.TextOffset = new System.Drawing.Point(5, 0);
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2Button1
+            // btnmedicos
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Lavender;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.Navy;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(25, 27);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 240);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(185, 49);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Empleados";
-            this.guna2Button1.TextOffset = new System.Drawing.Point(13, 0);
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnmedicos.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnmedicos.BorderThickness = 2;
+            this.btnmedicos.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnmedicos.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnmedicos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnmedicos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnmedicos.FillColor = System.Drawing.Color.Lavender;
+            this.btnmedicos.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmedicos.ForeColor = System.Drawing.Color.Black;
+            this.btnmedicos.HoverState.BorderColor = System.Drawing.Color.Navy;
+            this.btnmedicos.HoverState.FillColor = System.Drawing.Color.GhostWhite;
+            this.btnmedicos.Image = ((System.Drawing.Image)(resources.GetObject("btnmedicos.Image")));
+            this.btnmedicos.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnmedicos.ImageSize = new System.Drawing.Size(25, 27);
+            this.btnmedicos.Location = new System.Drawing.Point(0, 240);
+            this.btnmedicos.Name = "btnmedicos";
+            this.btnmedicos.Size = new System.Drawing.Size(185, 49);
+            this.btnmedicos.TabIndex = 4;
+            this.btnmedicos.Text = "Empleados";
+            this.btnmedicos.TextOffset = new System.Drawing.Point(13, 0);
+            this.btnmedicos.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // citasbtn
             // 
@@ -324,16 +324,16 @@ namespace MedicalHistory
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2Button citasbtn;
-        private Guna.UI2.WinForms.Guna2Button pacienbt;
         private Guna.UI2.WinForms.Guna2Button Dashboardbt;
         private Guna.UI2.WinForms.Guna2Button salirbtn;
         private System.Windows.Forms.Label userlb;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel pdad;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        public Guna.UI2.WinForms.Guna2Button citasbtn;
+        public Guna.UI2.WinForms.Guna2Button pacienbt;
+        public Guna.UI2.WinForms.Guna2Button btnconfi;
+        public Guna.UI2.WinForms.Guna2Button guna2Button2;
+        public Guna.UI2.WinForms.Guna2Button btnmedicos;
+        public Guna.UI2.WinForms.Guna2Button btnusuarios;
     }
 }

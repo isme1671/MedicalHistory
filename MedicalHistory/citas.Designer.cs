@@ -30,36 +30,35 @@ namespace MedicalHistory
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(citas));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(citas));
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.tbbuscar = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.cbpacientes = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.tbnombrep = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.tbhis = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dtfecha = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.btagregar = new Guna.UI2.WinForms.Guna2Button();
-            this.btdelete = new Guna.UI2.WinForms.Guna2Button();
-            this.bteditar = new Guna.UI2.WinForms.Guna2Button();
+            this.dthora = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.dgvcitas = new Guna.UI2.WinForms.Guna2DataGridView();
             this.clinicaDataSet = new MedicalHistory.clinicaDataSet();
             this.citasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.citasTableAdapter = new MedicalHistory.clinicaDataSetTableAdapters.citasTableAdapter();
-            this.idgestionempleadosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bteditar = new Guna.UI2.WinForms.Guna2Button();
+            this.btdelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btagregar = new Guna.UI2.WinForms.Guna2Button();
+            this.tbbuscar = new Guna.UI2.WinForms.Guna2TextBox();
             this.idpacienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechacitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idhistorialmedicoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idempleadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbmedico = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbpacientes = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -81,32 +80,6 @@ namespace MedicalHistory
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(758, 55);
             this.guna2GradientPanel1.TabIndex = 2;
-            // 
-            // tbbuscar
-            // 
-            this.tbbuscar.BackColor = System.Drawing.Color.Transparent;
-            this.tbbuscar.BorderRadius = 8;
-            this.tbbuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbbuscar.DefaultText = "";
-            this.tbbuscar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbbuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbbuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbbuscar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbbuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.tbbuscar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbbuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbbuscar.ForeColor = System.Drawing.Color.Black;
-            this.tbbuscar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbbuscar.IconLeft = ((System.Drawing.Image)(resources.GetObject("tbbuscar.IconLeft")));
-            this.tbbuscar.Location = new System.Drawing.Point(548, 15);
-            this.tbbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbbuscar.Name = "tbbuscar";
-            this.tbbuscar.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbbuscar.PlaceholderText = "Buscar";
-            this.tbbuscar.SelectedText = "";
-            this.tbbuscar.Size = new System.Drawing.Size(175, 28);
-            this.tbbuscar.TabIndex = 17;
-            this.tbbuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -130,13 +103,13 @@ namespace MedicalHistory
             this.splitContainer1.Panel1.Controls.Add(this.bteditar);
             this.splitContainer1.Panel1.Controls.Add(this.btdelete);
             this.splitContainer1.Panel1.Controls.Add(this.btagregar);
-            this.splitContainer1.Panel1.Controls.Add(this.guna2DateTimePicker2);
+            this.splitContainer1.Panel1.Controls.Add(this.dthora);
             this.splitContainer1.Panel1.Controls.Add(this.label5);
             this.splitContainer1.Panel1.Controls.Add(this.label4);
-            this.splitContainer1.Panel1.Controls.Add(this.guna2DateTimePicker1);
-            this.splitContainer1.Panel1.Controls.Add(this.tbnombrep);
+            this.splitContainer1.Panel1.Controls.Add(this.dtfecha);
+            this.splitContainer1.Panel1.Controls.Add(this.tbhis);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
-            this.splitContainer1.Panel1.Controls.Add(this.guna2ComboBox1);
+            this.splitContainer1.Panel1.Controls.Add(this.cbmedico);
             this.splitContainer1.Panel1.Controls.Add(this.label2);
             this.splitContainer1.Panel1.Controls.Add(this.cbpacientes);
             this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
@@ -148,22 +121,6 @@ namespace MedicalHistory
             this.splitContainer1.Size = new System.Drawing.Size(758, 495);
             this.splitContainer1.SplitterDistance = 252;
             this.splitContainer1.TabIndex = 3;
-            // 
-            // cbpacientes
-            // 
-            this.cbpacientes.BackColor = System.Drawing.Color.Transparent;
-            this.cbpacientes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbpacientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbpacientes.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbpacientes.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbpacientes.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbpacientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbpacientes.ItemHeight = 30;
-            this.cbpacientes.Location = new System.Drawing.Point(17, 39);
-            this.cbpacientes.Name = "cbpacientes";
-            this.cbpacientes.Size = new System.Drawing.Size(218, 36);
-            this.cbpacientes.TabIndex = 0;
-            this.cbpacientes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -185,59 +142,43 @@ namespace MedicalHistory
             this.label3.TabIndex = 3;
             this.label3.Text = "Médico";
             // 
-            // guna2ComboBox1
+            // tbhis
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(17, 118);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(218, 36);
-            this.guna2ComboBox1.TabIndex = 2;
-            this.guna2ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbhis.BorderColor = System.Drawing.Color.DarkCyan;
+            this.tbhis.BorderRadius = 5;
+            this.tbhis.BorderThickness = 2;
+            this.tbhis.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbhis.DefaultText = "";
+            this.tbhis.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbhis.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbhis.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbhis.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbhis.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbhis.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbhis.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbhis.Location = new System.Drawing.Point(17, 167);
+            this.tbhis.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbhis.Name = "tbhis";
+            this.tbhis.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbhis.PlaceholderText = "Historial Médico";
+            this.tbhis.SelectedText = "";
+            this.tbhis.Size = new System.Drawing.Size(218, 41);
+            this.tbhis.TabIndex = 5;
+            this.tbhis.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // tbnombrep
+            // dtfecha
             // 
-            this.tbnombrep.BorderColor = System.Drawing.Color.DarkCyan;
-            this.tbnombrep.BorderRadius = 5;
-            this.tbnombrep.BorderThickness = 2;
-            this.tbnombrep.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbnombrep.DefaultText = "";
-            this.tbnombrep.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.tbnombrep.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.tbnombrep.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbnombrep.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.tbnombrep.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbnombrep.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbnombrep.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.tbnombrep.Location = new System.Drawing.Point(17, 167);
-            this.tbnombrep.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.tbnombrep.Name = "tbnombrep";
-            this.tbnombrep.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.tbnombrep.PlaceholderText = "Historial Médico";
-            this.tbnombrep.SelectedText = "";
-            this.tbnombrep.Size = new System.Drawing.Size(218, 41);
-            this.tbnombrep.TabIndex = 5;
-            this.tbnombrep.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.LightSeaGreen;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(17, 252);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(218, 38);
-            this.guna2DateTimePicker1.TabIndex = 6;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 10, 13, 15, 12, 49, 598);
+            this.dtfecha.Checked = true;
+            this.dtfecha.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.dtfecha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtfecha.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtfecha.Location = new System.Drawing.Point(17, 252);
+            this.dtfecha.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtfecha.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtfecha.Name = "dtfecha";
+            this.dtfecha.Size = new System.Drawing.Size(218, 38);
+            this.dtfecha.TabIndex = 6;
+            this.dtfecha.Value = new System.DateTime(2025, 10, 13, 15, 12, 49, 598);
             // 
             // label4
             // 
@@ -255,80 +196,23 @@ namespace MedicalHistory
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(13, 305);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 21);
+            this.label5.Size = new System.Drawing.Size(50, 21);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Fecha:";
+            this.label5.Text = "Hora:";
             // 
-            // guna2DateTimePicker2
+            // dthora
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.LightSeaGreen;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(17, 332);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(218, 38);
-            this.guna2DateTimePicker2.TabIndex = 9;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2025, 10, 13, 15, 12, 49, 598);
-            // 
-            // btagregar
-            // 
-            this.btagregar.BorderRadius = 5;
-            this.btagregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btagregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btagregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btagregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btagregar.FillColor = System.Drawing.Color.CadetBlue;
-            this.btagregar.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btagregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btagregar.ForeColor = System.Drawing.Color.Black;
-            this.btagregar.Image = ((System.Drawing.Image)(resources.GetObject("btagregar.Image")));
-            this.btagregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btagregar.Location = new System.Drawing.Point(65, 388);
-            this.btagregar.Name = "btagregar";
-            this.btagregar.Size = new System.Drawing.Size(115, 26);
-            this.btagregar.TabIndex = 10;
-            this.btagregar.Text = "Agregar";
-            // 
-            // btdelete
-            // 
-            this.btdelete.BorderRadius = 5;
-            this.btdelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btdelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btdelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btdelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btdelete.FillColor = System.Drawing.Color.CadetBlue;
-            this.btdelete.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btdelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdelete.ForeColor = System.Drawing.Color.Black;
-            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
-            this.btdelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btdelete.Location = new System.Drawing.Point(65, 420);
-            this.btdelete.Name = "btdelete";
-            this.btdelete.Size = new System.Drawing.Size(115, 26);
-            this.btdelete.TabIndex = 11;
-            this.btdelete.Text = "Eliminar";
-            // 
-            // bteditar
-            // 
-            this.bteditar.BorderRadius = 5;
-            this.bteditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bteditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bteditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bteditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bteditar.FillColor = System.Drawing.Color.CadetBlue;
-            this.bteditar.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.bteditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bteditar.ForeColor = System.Drawing.Color.Black;
-            this.bteditar.Image = ((System.Drawing.Image)(resources.GetObject("bteditar.Image")));
-            this.bteditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bteditar.Location = new System.Drawing.Point(65, 452);
-            this.bteditar.Name = "bteditar";
-            this.bteditar.Size = new System.Drawing.Size(115, 26);
-            this.bteditar.TabIndex = 12;
-            this.bteditar.Text = "Modificar";
+            this.dthora.Checked = true;
+            this.dthora.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.dthora.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dthora.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dthora.Location = new System.Drawing.Point(17, 332);
+            this.dthora.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dthora.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dthora.Name = "dthora";
+            this.dthora.Size = new System.Drawing.Size(218, 38);
+            this.dthora.TabIndex = 9;
+            this.dthora.Value = new System.DateTime(2025, 10, 13, 15, 12, 49, 598);
             // 
             // dgvcitas
             // 
@@ -344,9 +228,9 @@ namespace MedicalHistory
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvcitas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvcitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcitas.ColumnHeadersHeight = 44;
+            this.dgvcitas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvcitas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idgestionempleadosDataGridViewTextBoxColumn,
             this.idpacienteDataGridViewTextBoxColumn,
             this.fechacitaDataGridViewTextBoxColumn,
             this.diaDataGridViewTextBoxColumn,
@@ -380,7 +264,7 @@ namespace MedicalHistory
             this.dgvcitas.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
             this.dgvcitas.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvcitas.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
-            this.dgvcitas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvcitas.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvcitas.ThemeStyle.HeaderStyle.Height = 44;
             this.dgvcitas.ThemeStyle.ReadOnly = false;
             this.dgvcitas.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -390,6 +274,8 @@ namespace MedicalHistory
             this.dgvcitas.ThemeStyle.RowsStyle.Height = 22;
             this.dgvcitas.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvcitas.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvcitas.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcitas_CellClick);
+            this.dgvcitas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvcitas_CellContentClick);
             // 
             // clinicaDataSet
             // 
@@ -405,12 +291,89 @@ namespace MedicalHistory
             // 
             this.citasTableAdapter.ClearBeforeFill = true;
             // 
-            // idgestionempleadosDataGridViewTextBoxColumn
+            // bteditar
             // 
-            this.idgestionempleadosDataGridViewTextBoxColumn.DataPropertyName = "id_gestion_empleados";
-            this.idgestionempleadosDataGridViewTextBoxColumn.HeaderText = "Gestión de Empleados";
-            this.idgestionempleadosDataGridViewTextBoxColumn.Name = "idgestionempleadosDataGridViewTextBoxColumn";
-            this.idgestionempleadosDataGridViewTextBoxColumn.ReadOnly = true;
+            this.bteditar.BorderRadius = 5;
+            this.bteditar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bteditar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bteditar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bteditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bteditar.FillColor = System.Drawing.Color.CadetBlue;
+            this.bteditar.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.bteditar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bteditar.ForeColor = System.Drawing.Color.Black;
+            this.bteditar.Image = ((System.Drawing.Image)(resources.GetObject("bteditar.Image")));
+            this.bteditar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bteditar.Location = new System.Drawing.Point(65, 452);
+            this.bteditar.Name = "bteditar";
+            this.bteditar.Size = new System.Drawing.Size(115, 26);
+            this.bteditar.TabIndex = 12;
+            this.bteditar.Text = "Modificar";
+            // 
+            // btdelete
+            // 
+            this.btdelete.BorderRadius = 5;
+            this.btdelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btdelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btdelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btdelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btdelete.FillColor = System.Drawing.Color.CadetBlue;
+            this.btdelete.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btdelete.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btdelete.ForeColor = System.Drawing.Color.Black;
+            this.btdelete.Image = ((System.Drawing.Image)(resources.GetObject("btdelete.Image")));
+            this.btdelete.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btdelete.Location = new System.Drawing.Point(65, 420);
+            this.btdelete.Name = "btdelete";
+            this.btdelete.Size = new System.Drawing.Size(115, 26);
+            this.btdelete.TabIndex = 11;
+            this.btdelete.Text = "Eliminar";
+            // 
+            // btagregar
+            // 
+            this.btagregar.BorderRadius = 5;
+            this.btagregar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btagregar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btagregar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btagregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btagregar.FillColor = System.Drawing.Color.CadetBlue;
+            this.btagregar.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btagregar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btagregar.ForeColor = System.Drawing.Color.Black;
+            this.btagregar.Image = ((System.Drawing.Image)(resources.GetObject("btagregar.Image")));
+            this.btagregar.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btagregar.Location = new System.Drawing.Point(65, 388);
+            this.btagregar.Name = "btagregar";
+            this.btagregar.Size = new System.Drawing.Size(115, 26);
+            this.btagregar.TabIndex = 10;
+            this.btagregar.Text = "Agregar";
+            this.btagregar.Click += new System.EventHandler(this.btagregar_Click);
+            // 
+            // tbbuscar
+            // 
+            this.tbbuscar.BackColor = System.Drawing.Color.Transparent;
+            this.tbbuscar.BorderRadius = 8;
+            this.tbbuscar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tbbuscar.DefaultText = "";
+            this.tbbuscar.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.tbbuscar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.tbbuscar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbbuscar.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.tbbuscar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tbbuscar.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbbuscar.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbbuscar.ForeColor = System.Drawing.Color.Black;
+            this.tbbuscar.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tbbuscar.IconLeft = ((System.Drawing.Image)(resources.GetObject("tbbuscar.IconLeft")));
+            this.tbbuscar.Location = new System.Drawing.Point(548, 15);
+            this.tbbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbbuscar.Name = "tbbuscar";
+            this.tbbuscar.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.tbbuscar.PlaceholderText = "Buscar";
+            this.tbbuscar.SelectedText = "";
+            this.tbbuscar.Size = new System.Drawing.Size(175, 28);
+            this.tbbuscar.TabIndex = 17;
+            this.tbbuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // idpacienteDataGridViewTextBoxColumn
             // 
@@ -427,7 +390,7 @@ namespace MedicalHistory
             // diaDataGridViewTextBoxColumn
             // 
             this.diaDataGridViewTextBoxColumn.DataPropertyName = "dia";
-            this.diaDataGridViewTextBoxColumn.HeaderText = "Día";
+            this.diaDataGridViewTextBoxColumn.HeaderText = "Hora";
             this.diaDataGridViewTextBoxColumn.Name = "diaDataGridViewTextBoxColumn";
             // 
             // idhistorialmedicoDataGridViewTextBoxColumn
@@ -441,6 +404,38 @@ namespace MedicalHistory
             this.idempleadoDataGridViewTextBoxColumn.DataPropertyName = "id_empleado";
             this.idempleadoDataGridViewTextBoxColumn.HeaderText = "ID Empleado";
             this.idempleadoDataGridViewTextBoxColumn.Name = "idempleadoDataGridViewTextBoxColumn";
+            // 
+            // cbmedico
+            // 
+            this.cbmedico.BackColor = System.Drawing.Color.Transparent;
+            this.cbmedico.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbmedico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbmedico.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmedico.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmedico.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbmedico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbmedico.ItemHeight = 30;
+            this.cbmedico.Location = new System.Drawing.Point(17, 118);
+            this.cbmedico.Name = "cbmedico";
+            this.cbmedico.Size = new System.Drawing.Size(218, 36);
+            this.cbmedico.TabIndex = 2;
+            this.cbmedico.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // cbpacientes
+            // 
+            this.cbpacientes.BackColor = System.Drawing.Color.Transparent;
+            this.cbpacientes.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbpacientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbpacientes.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbpacientes.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbpacientes.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbpacientes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbpacientes.ItemHeight = 30;
+            this.cbpacientes.Location = new System.Drawing.Point(17, 39);
+            this.cbpacientes.Name = "cbpacientes";
+            this.cbpacientes.Size = new System.Drawing.Size(218, 36);
+            this.cbpacientes.TabIndex = 0;
+            this.cbpacientes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // citas
             // 
@@ -475,14 +470,12 @@ namespace MedicalHistory
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2ComboBox cbpacientes;
-        private Guna.UI2.WinForms.Guna2TextBox tbnombrep;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2TextBox tbhis;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dthora;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtfecha;
         private Guna.UI2.WinForms.Guna2Button bteditar;
         private Guna.UI2.WinForms.Guna2Button btdelete;
         private Guna.UI2.WinForms.Guna2Button btagregar;
@@ -490,11 +483,12 @@ namespace MedicalHistory
         private clinicaDataSet clinicaDataSet;
         private System.Windows.Forms.BindingSource citasBindingSource;
         private clinicaDataSetTableAdapters.citasTableAdapter citasTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idgestionempleadosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpacienteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechacitaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn diaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idhistorialmedicoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idempleadoDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2ComboBox cbmedico;
+        private Guna.UI2.WinForms.Guna2ComboBox cbpacientes;
     }
 }

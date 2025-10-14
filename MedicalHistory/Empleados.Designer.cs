@@ -40,15 +40,12 @@
             this.txtsueldo = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbocupacion = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbespecialidad = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.lbledad = new System.Windows.Forms.Label();
             this.lblcorreo = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblespecialidad = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblusuario = new System.Windows.Forms.Label();
             this.lblclave = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -80,22 +77,26 @@
             // 
             // txtcedula
             // 
-            this.txtcedula.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtcedula.BackColor = System.Drawing.Color.Transparent;
+            this.txtcedula.BorderRadius = 8;
             this.txtcedula.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtcedula.DefaultText = "";
             this.txtcedula.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtcedula.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtcedula.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtcedula.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtcedula.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtcedula.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtcedula.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtcedula.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcedula.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtcedula.Location = new System.Drawing.Point(44, 180);
             this.txtcedula.Name = "txtcedula";
-            this.txtcedula.PlaceholderText = "";
+            this.txtcedula.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtcedula.PlaceholderText = "Cédula";
             this.txtcedula.SelectedText = "";
             this.txtcedula.Size = new System.Drawing.Size(191, 39);
             this.txtcedula.TabIndex = 1;
+            this.txtcedula.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtdireccion
             // 
@@ -156,22 +157,26 @@
             // 
             // txtedad
             // 
-            this.txtedad.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtedad.BackColor = System.Drawing.Color.Transparent;
+            this.txtedad.BorderRadius = 8;
             this.txtedad.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtedad.DefaultText = "";
             this.txtedad.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtedad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtedad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtedad.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtedad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtedad.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtedad.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtedad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtedad.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtedad.Location = new System.Drawing.Point(309, 180);
             this.txtedad.Name = "txtedad";
-            this.txtedad.PlaceholderText = "";
+            this.txtedad.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtedad.PlaceholderText = "Edad";
             this.txtedad.SelectedText = "";
             this.txtedad.Size = new System.Drawing.Size(191, 39);
             this.txtedad.TabIndex = 6;
+            this.txtedad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtapellido
             // 
@@ -217,22 +222,26 @@
             // 
             // txtusuario
             // 
-            this.txtusuario.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.txtusuario.BackColor = System.Drawing.Color.Transparent;
+            this.txtusuario.BorderRadius = 8;
             this.txtusuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtusuario.DefaultText = "";
             this.txtusuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtusuario.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtusuario.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtusuario.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtusuario.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtusuario.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtusuario.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtusuario.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtusuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtusuario.Location = new System.Drawing.Point(567, 107);
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.PlaceholderText = "";
+            this.txtusuario.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.txtusuario.PlaceholderText = "Usuario";
             this.txtusuario.SelectedText = "";
             this.txtusuario.Size = new System.Drawing.Size(191, 39);
             this.txtusuario.TabIndex = 11;
+            this.txtusuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtsueldo
             // 
@@ -285,16 +294,6 @@
             this.cmbespecialidad.Size = new System.Drawing.Size(192, 36);
             this.cmbespecialidad.TabIndex = 14;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 159);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Cedula";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -314,16 +313,6 @@
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 18;
             this.label4.Text = "Telefono";
-            // 
-            // lbledad
-            // 
-            this.lbledad.AutoSize = true;
-            this.lbledad.Location = new System.Drawing.Point(307, 156);
-            this.lbledad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbledad.Name = "lbledad";
-            this.lbledad.Size = new System.Drawing.Size(32, 13);
-            this.lbledad.TabIndex = 19;
-            this.lbledad.Text = "Edad";
             // 
             // lblcorreo
             // 
@@ -364,16 +353,6 @@
             this.label11.Size = new System.Drawing.Size(40, 13);
             this.label11.TabIndex = 25;
             this.label11.Text = "Sueldo";
-            // 
-            // lblusuario
-            // 
-            this.lblusuario.AutoSize = true;
-            this.lblusuario.Location = new System.Drawing.Point(564, 91);
-            this.lblusuario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(43, 13);
-            this.lblusuario.TabIndex = 26;
-            this.lblusuario.Text = "Usuario";
             // 
             // lblclave
             // 
@@ -437,15 +416,12 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.lblclave);
-            this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblespecialidad);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblcorreo);
-            this.Controls.Add(this.lbledad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbespecialidad);
             this.Controls.Add(this.cmbocupacion);
             this.Controls.Add(this.txtclave);
@@ -483,15 +459,12 @@
         private Guna.UI2.WinForms.Guna2TextBox txtsueldo;
         private Guna.UI2.WinForms.Guna2ComboBox cmbocupacion;
         private Guna.UI2.WinForms.Guna2ComboBox cmbespecialidad;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbledad;
         private System.Windows.Forms.Label lblcorreo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblespecialidad;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.Label lblclave;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label5;

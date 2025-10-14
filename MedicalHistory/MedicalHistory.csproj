@@ -106,6 +106,8 @@
       <DependentUpon>inicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\EmpleadosSql.cs" />
+    <Compile Include="Modelo\User.cs" />
+    <Compile Include="Modelo\Usuarios.cs" />
     <Compile Include="pacientes.cs">
       <SubType>Form</SubType>
     </Compile>
