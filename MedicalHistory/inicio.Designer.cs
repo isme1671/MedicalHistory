@@ -201,6 +201,7 @@ namespace MedicalHistory
             this.citasbtn.Size = new System.Drawing.Size(185, 49);
             this.citasbtn.TabIndex = 3;
             this.citasbtn.Text = "Gestión de Citas";
+            this.citasbtn.Click += new System.EventHandler(this.citasbtn_Click);
             // 
             // pacienbt
             // 

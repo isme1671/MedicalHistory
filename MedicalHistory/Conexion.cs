@@ -12,14 +12,14 @@ namespace MedicalHistory
     {
         public static SqlConnection Conectar()
         {
-            SqlConnection cn = new SqlConnection("server=LAPTOP-ISMELIN\\SQLEXPRESS; Database= clinica; Integrated Security= True");
+            SqlConnection cn = new SqlConnection("server=LAPTOP-ISMELIN; Database= clinica; Integrated Security= True");
             cn.Open();
             return cn;
         }
 
         public static SqlConnection Cerrar()
         {
-            SqlConnection cn = new SqlConnection("server=LAPTOP-ISMELIN\\SQLEXPRESS; Database= clinica; Integrated Security= True");
+            SqlConnection cn = new SqlConnection("server = LAPTOP-ISMELIN; Database = clinica; Integrated Security = True");
             cn.Close();
             return cn;
         }

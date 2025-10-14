@@ -46,7 +46,12 @@ namespace MedicalHistory
 
         private void Dashboardbt_Click(object sender, EventArgs e)
         {
+            AbrirForm(new dashboard());
+        }
 
+        private void citasbtn_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new citas());
         }
     }
 }

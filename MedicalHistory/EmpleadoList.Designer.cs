@@ -62,13 +62,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgem.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgem.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgem.Location = new System.Drawing.Point(66, 132);
+            this.dgem.Location = new System.Drawing.Point(11, 175);
             this.dgem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgem.Name = "dgem";
             this.dgem.RowHeadersVisible = false;
             this.dgem.RowHeadersWidth = 62;
             this.dgem.RowTemplate.Height = 28;
-            this.dgem.Size = new System.Drawing.Size(669, 238);
+            this.dgem.Size = new System.Drawing.Size(642, 238);
             this.dgem.TabIndex = 0;
             this.dgem.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgem.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -100,7 +100,7 @@
             this.btnagregar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnagregar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnagregar.ForeColor = System.Drawing.Color.White;
-            this.btnagregar.Location = new System.Drawing.Point(739, 132);
+            this.btnagregar.Location = new System.Drawing.Point(671, 246);
             this.btnagregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnagregar.Name = "btnagregar";
             this.btnagregar.Size = new System.Drawing.Size(92, 29);
@@ -116,7 +116,7 @@
             this.btneditar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btneditar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btneditar.ForeColor = System.Drawing.Color.White;
-            this.btneditar.Location = new System.Drawing.Point(739, 181);
+            this.btneditar.Location = new System.Drawing.Point(671, 295);
             this.btneditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btneditar.Name = "btneditar";
             this.btneditar.Size = new System.Drawing.Size(92, 29);
@@ -132,7 +132,7 @@
             this.btneliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btneliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btneliminar.ForeColor = System.Drawing.Color.White;
-            this.btneliminar.Location = new System.Drawing.Point(739, 229);
+            this.btneliminar.Location = new System.Drawing.Point(671, 343);
             this.btneliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btneliminar.Name = "btneliminar";
             this.btneliminar.Size = new System.Drawing.Size(92, 29);
@@ -144,11 +144,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(843, 393);
+            this.ClientSize = new System.Drawing.Size(774, 589);
             this.Controls.Add(this.btneliminar);
             this.Controls.Add(this.btneditar);
             this.Controls.Add(this.btnagregar);
             this.Controls.Add(this.dgem);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "EmpleadoList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
