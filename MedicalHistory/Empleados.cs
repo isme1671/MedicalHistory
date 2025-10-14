@@ -29,7 +29,6 @@ namespace MedicalHistory
             cmbespecialidad.DisplayMember = "especialidad";
             cmbespecialidad.ValueMember = "id_especialidad";
         }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             int edad;
@@ -91,6 +90,8 @@ namespace MedicalHistory
             {
                 MessageBox.Show("Los campos Nombre y Clave son obligatorios.", "Validación de Datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+
+      
             }
 
 
@@ -104,6 +105,10 @@ namespace MedicalHistory
                 MessageBox.Show("Se ha registrado al empleado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Aquí podrías añadir un método para limpiar los campos
+                EmpleadoList aform = new EmpleadoList();
+                aform.Show();
+                this.Hide();
+
             }
             catch (Exception ex)
             {
@@ -111,6 +116,12 @@ namespace MedicalHistory
                 MessageBox.Show("Ocurrió un error en la base de datos o en la conexión: " + ex.Message, "Error de Inserción", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void btlista_Click(object sender, EventArgs e)
+        {
+            inicio iniciom = (inicio)this.ParentForm;
+            iniciom.abrirfrms(new EmpleadoList());
         }
     }
 }

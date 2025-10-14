@@ -52,6 +52,7 @@
             this.lblclave = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.btlista = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // txtnombre
@@ -392,7 +393,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(575, 376);
+            this.guna2Button1.Location = new System.Drawing.Point(567, 313);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(191, 34);
@@ -411,11 +412,28 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Registro Empleados";
             // 
+            // btlista
+            // 
+            this.btlista.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btlista.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btlista.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btlista.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btlista.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btlista.ForeColor = System.Drawing.Color.White;
+            this.btlista.Location = new System.Drawing.Point(567, 371);
+            this.btlista.Margin = new System.Windows.Forms.Padding(2);
+            this.btlista.Name = "btlista";
+            this.btlista.Size = new System.Drawing.Size(191, 34);
+            this.btlista.TabIndex = 30;
+            this.btlista.Text = "Lista de Empleados";
+            this.btlista.Click += new System.EventHandler(this.btlista_Click);
+            // 
             // Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(835, 453);
+            this.Controls.Add(this.btlista);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.lblclave);
@@ -477,5 +495,6 @@
         private System.Windows.Forms.Label lblclave;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Button btlista;
     }
 }

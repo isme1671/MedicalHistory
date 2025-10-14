@@ -28,6 +28,15 @@ namespace MedicalHistory
             formulariohijo.Show();
 
         }
+        public void abrirfrms (Form formhijo)
+        {
+            if (this.pdad.Controls.Count > 0)
+                this.pdad.Controls.RemoveAt(0);
+            formhijo.TopLevel = false;
+            formhijo.Dock = DockStyle.Fill;
+            this.pdad.Controls.Add(formhijo);
+            formhijo.Show();
+        }
         private void inicio_Load(object sender, EventArgs e)
         {
             AbrirForm(new dashboard());
@@ -52,6 +61,21 @@ namespace MedicalHistory
         private void citasbtn_Click(object sender, EventArgs e)
         {
             AbrirForm(new citas());
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new historialmed());
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new Empleados());
+        }
+
+        private void pdad_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
